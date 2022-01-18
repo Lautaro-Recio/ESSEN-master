@@ -757,7 +757,6 @@
     margin-bottom: 50px;
 }
 .redesSociales{
-    margin:0% 145%;
     margin-bottom: 50px;
 }
 .pieDePagina{
@@ -775,6 +774,7 @@
     color:black;
     font-size: 30px;
     margin-left:30px ;
+    text-align: center;
 }
 .links{
     text-decoration: none;
@@ -788,4 +788,15 @@
 }
 .linkBoton:hover{
     color: #B50303;
+}
+.divDesarrollo{
+    margin-bottom:100px ;
+}
+.desarrollo{
+    font-size: 21px;
+    font-weight: bolder;
+}
+.itemsDesarrollo{
+    font-size: 15px;
+    color: #7F7F7F;
 }

@@ -1,12 +1,13 @@
 @media only screen and (max-width: 577px) {
   /* EQUIPO */
+  .redesSociales {
+    margin: 0% !important; }
   .equipo {
     height: 260px !important; }
   .equipo_abajo {
     height: 180px !important; }
   .redes {
-    margin: 10px !important; 
-    padding: 5px !important}
+    padding: 5px !important; }
   .equipo_texto {
     font-size: 29px !important; }
   .equipo_boton {
@@ -73,15 +74,11 @@ main {
 .w-1440px {
   max-width: 1440px; }
 
-  .h-140px {
-    height: 140px; }
-  
-  .pt-140px{
-    padding-top: 140px;
-  }
+.h-140px {
+  height: 140px; }
 
 .navbar {
-  padding: 0px;
+  padding: 0 16px;
   background: rgba(255, 255, 255, 0.3); }
 
 .logo {
@@ -278,7 +275,8 @@ a.nav-links:hover {
     top: -125px;
     right: 10px; }
   .carousel-indicators {
-    top: 0px;}
+    top: 0px;
+    left: 20px; }
   .carousel-indicators button {
     max-width: 10px;
     max-height: 10px; } }
@@ -313,7 +311,7 @@ a.nav-links:hover {
   bottom: 400px;
   right: -20px; }
 
-.btn-consultar:hover, .product-btn-consultarPrecio:hover a{
+.btn-consultar:hover {
   transform: scale(1.01);
   color: #B50303; }
 
@@ -642,20 +640,24 @@ a.nav-links:hover {
   margin-bottom: 50px; }
 
 .redesSociales {
-  margin-bottom: 50px; 
-  width: 100%;}
+  margin-bottom: 50px; }
+
+.pieDePagina {
+  display: inline-table;
+  align-items: center;
+  justify-content: space-around; }
 
 .redes {
-  width: 40px;
-  height: 40px;
-  margin: 20px; }
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px; }
 
 .p_redes {
   font-weight: bold;
   color: black;
   font-size: 30px;
-  width: 100%;
-  text-align: center ;}
+  margin-left: 30px;
+  text-align: center; }
 
 .links {
   text-decoration: none;
@@ -667,3 +669,14 @@ a.nav-links:hover {
 
 .linkBoton:hover {
   color: #B50303; }
+
+.divDesarrollo {
+  margin-bottom: 100px; }
+
+.desarrollo {
+  font-size: 21px;
+  font-weight: bolder; }
+
+.itemsDesarrollo {
+  font-size: 15px;
+  color: #7F7F7F; }
