@@ -1,0 +1,83 @@
+@media only screen and (max-width:577px) {
+    /* EQUIPO */
+    .redesSociales{
+        margin: 0% !important;
+    }
+    .equipo{
+        height: 260px !important;
+    }
+    .equipo_abajo{
+        height: 180px !important;
+    }
+    .redes{
+        padding: 5px !important;
+    }
+    
+    .equipo_texto{
+        font-size: 29px !important;
+    }
+    .equipo_boton{
+        display: none !important;
+    }
+    .unirse{
+        padding: 32px !important;
+        width: 205px !important;
+        height: 48px !important;
+        font-size: 16px !important;
+    }
+
+    /* RECETAS */
+    .divBoton{
+        position: absolute;
+        justify-content: center !important;
+        margin-top: 420px;
+    }
+    .recetas_p{
+        font-family: Open Sans !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 20px !important; 
+    }
+    .recetas_botones{
+        width:auto !important;
+        height: 40px !important;
+        border-radius: 15px !important;
+        font-weight: bold !important;
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+    .recetas_titulo{
+        font-size: 20px !important;
+        line-height: 28px !important;
+        text-align: center !important;
+    }
+    .recetas_titulo_p{
+        text-align: center !important;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+    .estiloImportanteCelu{
+        width: 180px !important;
+        height: 310px !important;
+    }
+   
+    .recetas_cards_botones{
+        width :136px !important;
+        height: 32px !important;
+    }
+    .recetas_imgs{
+        width: 128px;
+        height: 128px;
+    }
+    .divBotones{
+        display: flex;
+        height: 20px;
+    }
+    .imgLogo{
+        width: 50px !important;
+    }
+}

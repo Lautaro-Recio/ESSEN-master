@@ -1,0 +1,791 @@
+@import "colores";
+@import "VistaMobile";
+/* Estilos Diego */
+    /* NAVBAR Y BG ESSEN*/
+
+    /* Este estilo es para que cuando scrolle la nav sea de color blanco  */
+    .blanco{
+        background-color: white !important;
+    }
+    main{
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .w-1440px {
+        max-width: 1440px;
+    }
+
+    .h-140px {
+        height: 140px;
+    }
+
+    .navbar {
+        padding: 0 16px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .logo {
+        margin-right: 201px;
+        margin-left: 150px;
+        font-family: Open Sans;
+        font-weight: 600;
+        color: #000;
+        font-size: 32px;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: Open Sans;
+    }
+
+    a.nav-links:hover {
+        color: #B50303;
+    }
+
+    .contact {
+        margin-right: 150px;
+    }
+
+
+    .bg-essen {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bg-essen-img img {
+        position: relative;
+        width: 662px;
+        z-index: -999;
+    }
+
+    .btn-close {
+        color: #000;
+    }
+
+    .navbar-toggler {
+        padding-left: 16px;
+    }
+
+    .whatsapp-icon {
+        margin-right: 16px;
+    }
+
+    @media (max-width:1253px) {
+        .logo {
+            margin: 75px;
+            margin-right: 125px;
+        }
+
+        .contact {
+            margin-right: 75px;
+        }
+
+        .bg-essen-img img {
+            width: 50%;
+            margin-left: 50%;
+        }
+
+
+    }
+
+    @media (max-width:1150px) {
+        .logo {
+            margin: 50px;
+            margin-right: 100px;
+        }
+
+        .contact {
+            margin-right: 50px;
+        }
+    }
+
+
+    @media (max-width:991px) {
+
+        .wpp-icon-nav {
+            position: relative;
+            right: 40px;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .svg-logo {
+            position: relative;
+            left: -15px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .navbar {
+            height: 52px;
+        }
+
+        .nav-links {
+            font-size: 16px;
+            padding-top: 0px;
+            font-weight: 400;
+        }
+
+        .nav-item {
+            padding-bottom: 32px;
+        }
+
+        .offcanvas {
+            max-width: 256px;
+        }
+
+        .offcanvas-header {
+            margin-bottom: 37px;
+        }
+
+        .offcanvas-title {
+            color: #EBA69D;
+        }
+    }
+
+    /* CAROUSEL */
+
+    .carousel-item img {
+        max-width: 649px;
+        margin-left: 130px;
+        margin-top: 8px;
+    }
+
+    .carousel {
+        width: 100%;
+        top: 133px;
+        max-height: 1000px;
+    }
+
+
+    .carousel-main-txt {
+        font-family: Open Sans;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        margin-left: 20px;
+        position: relative;
+        top: -475px;
+
+    }
+
+    .carousel-main-txt-2 {
+        font-size: 76px;
+        line-height: 106px;
+        display: block;
+        position: relative;
+    }
+
+    .carousel-secondary-txt {
+        max-width: 433px;
+        font-size: 20px;
+        line-height: 32px;
+        color: #7F7F7F;
+        font-family: Open Sans;
+        margin-left: 20px;
+        font-weight: normal;
+        font-style: normal;
+        margin-top: 32px;
+        position: relative;
+        top: -500px;
+    }
+
+    .carousel-indicators {
+        flex-direction: column;
+        margin: auto;
+        max-width: 1440px;
+        align-items: end;
+        top: 325px;
+    }
+
+
+    @media (max-width:1253px) {
+        .carousel-item img {
+            max-width: 500px;
+        }
+        .carousel-indicators {
+            top: 225px;
+        }
+
+        .carousel-main-txt{
+            top: -375px;
+        }
+        
+        .carousel-secondary-txt{
+            top: -400px;
+        }
+    }
+
+
+    @media (max-width: 992px) {
+
+        .carousel-inner {
+            top: -100px;
+        }
+
+        .carousel-item img {
+            max-width: 400px;
+        }
+
+        .carousel-main-txt {
+            font-size: 32px;
+            line-height: 32px;
+            top: -300px;
+        }
+
+        .carousel-main-txt-2 {
+            font-size: 56px;
+            line-height: 56px;
+        }
+
+        .carousel-secondary-txt {
+            top: -325px;
+        }
+
+        .carousel-indicators {
+            top: 155px;
+        }
+    }
+
+    @media (max-width: 706px) {
+
+        .carousel-inner {
+            top: -150px;
+        }
+
+        .carousel-item img {
+            max-width: 350px;
+        }
+
+        .carousel-main-txt {
+            font-size: 24px;
+            line-height: 24px;
+            top: -250px;
+        }
+
+        .carousel-main-txt-2 {
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+        .carousel-secondary-txt {
+            font-size: 14px;
+            line-height: 20px;
+            top: 20px;
+            margin-top: 16px;
+            top: -265px;
+        }
+
+        .carousel-indicators {
+            top: 75px;
+        }
+
+        .carousel-indicators button {
+            max-width: 10px;
+            max-height: 10px;
+        }
+    }
+
+    @media (max-width: 552px) {
+        .carousel-inner {
+            top: -130px;
+        }
+
+        .carousel-item img {
+            max-width: 152px;
+            margin-left: 90px;
+        }
+
+        .carousel-main-txt {
+            top: -110px;
+            padding: 0;
+            right: 10px;
+        }
+
+        .carousel-secondary-txt{
+            top: -125px;
+            right: 10px;
+        }
+
+        .carousel-indicators {
+            top: 0px;
+            left: 20px;
+        }
+
+        .carousel-indicators button {
+            max-width: 10px;
+            max-height: 10px;
+        }
+    }
+
+    @media(max-width: 420px) {
+        .carousel-inner {
+            top: -150px;
+        }
+    }
+
+    @media (max-width: 410px) {
+        .carousel-inner {
+            top: -170px;
+        }
+
+        .carousel-indicators {
+            top: -30px;
+        }
+    }
+
+    /* CAROUSEL */
+
+    /* BOTON CONSULTAR Y WHATSAPP */
+
+    .btn-consultar {
+        width: 158px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 26px;
+        background-color: #EBA69D;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        position: relative;
+        bottom: 400px;
+        right: -20px;
+    }
+
+    .btn-consultar:hover {
+        transform: scale(1.01);
+        color: #B50303;
+    }
+
+    .btn-whatsapp {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        margin-left: 20px;
+        width: 286px;
+        height: 65px;
+        border-radius: 45px;
+        background-color: #008169;
+        font-family: Open Sans;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25), inset 4px 4px 8px rgba(255, 255, 255, 0.25);
+        z-index: 999;
+    }
+
+    .btn-whatsapp:hover {
+        transform: scale(1.01);
+        animation-delay: 1s;
+        color: #fff;
+    }
+
+    .btn-whatsapp-icon {
+        margin-left: 24px;
+        margin-right: 12px;
+    }
+
+    @media (max-width: 1253px) {
+        .btn-consultar {
+            bottom: 170px;
+        }
+    }
+
+
+
+    @media (max-width: 992px) {
+        .btn-whatsapp {
+            display: none;
+        }
+
+        .btn-consultar {
+            bottom: 150px;
+        }
+    }
+
+    @media (max-width: 552px) {
+        .btn-consultar {
+            max-width: 108px;
+            max-height: 36px;
+            font-size: 16px;
+            line-height: 20px;
+            bottom: 40px;
+            right: -5px;
+        }
+    }
+
+    @media (max-width: 410px) {
+        .btn-consultar {
+            bottom: 35px;
+        }
+    }
+
+    /* BOTON CONSULTAR Y WHATSAPP */
+
+    /* SECCION PRODUCTOS*/
+
+    .nuestrosProductos-txt {
+        margin-top: 100px;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        font-family: Open Sans;
+    }
+
+    .nuestrosProductos-txt-secondary {
+        font-size: 20px;
+        line-height: 32px;
+        color: #7F7F7F;
+        font-family: Open Sans;
+        text-align: center;
+    }
+
+
+    @media (max-width: 992px) {
+        .nuestrosProductos-txt {
+            margin-top: 0;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .nuestrosProductos-txt-secondary {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    @media (max-width: 552px) {
+        .nuestrosProductos-txt {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .nuestrosProductos-txt-secondary {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    /* SECCION PRODUCTOS*/
+
+
+    /* SWIPER ESTILOS*/
+
+    .swiper {
+        margin-top: 50px;
+        max-width: 1440px;
+        height: 453px;
+    }
+
+    .swiper-slide{
+        max-width: 255px;
+    }
+
+    .swiper-slide img{
+        max-width: 255px;
+        margin: auto;
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .product-title{
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: Open Sans;
+    }
+
+    .product-subtitle{
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: Open Sans;
+        margin-top: 20px;
+    }
+
+    .product-description{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-btn-consultarPrecio{
+        margin-top: 15px;
+        background-color: #EBA69D;
+        width: 224px;
+        height: 48px;
+        border-radius: 26px;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        font-family: Open Sans;
+        margin: auto;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: #B50303;
+        transform: scale(1.5);
+    }
+
+    .swiper-button-prev{
+        color: #EBA69D;
+    }
+
+    .swiper-button-next{
+        color: #EBA69D;
+    }
+
+    @media (max-width: 992px){
+        .swiper{
+            margin-top: 0px;
+        }
+
+        .swiper-slide img{
+            max-width: 170px;
+        }
+        
+        .product-title{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        
+        .product-subtitle{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        
+        .product-description{
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        .product-btn-consultarPrecio{
+            width: 180px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 32px;
+            margin-top: 20px;
+        }
+    }
+
+    /* SWIPER ESTILOS*/
+/* Fin de estilos de diego */
+
+
+
+/* seccion recetas */
+.SeccionRecetas{
+    margin-bottom: 100px;
+}
+.botonEnRojo{
+    background-color: #B50303 !important;
+}
+.recetas_botones{
+    background-color: $botones;
+    border:1px solid $botones;
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    margin: 12px 7px 7px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.estliloImportante{
+    width: 255px !important;
+    height: 417px !important;
+    margin: 1% 1% 1% 0% !important;
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+}
+.recetas_cards{
+    background-color: #F5D3CE;
+    border-radius: 40px;
+    align-items: center;
+    margin: 5px;
+}
+.recetas_imgs{
+    border-radius: 100%;
+    width: 100%;
+    height: 50%;
+    padding: 13%;
+}
+.recetas_destacadas{
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    text-align: center;    
+}
+.recetas_cards_botones{
+    background-color: $botones;
+    border:1px solid $botones;
+    width: 211px;
+    height: 40px;
+    border-radius: 26px;
+    margin: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.recetas_p{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10%;
+    height: 130px;
+}
+.recetas_titulo_p{
+    color: #727272;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+.recetas_titulo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #292929;
+}
+.link_recetas{
+    text-decoration: none;
+    color: #A15215;
+}
+
+    /* Slider de recetas */
+        .swiper-pagination3{
+            text-align: center;
+        }
+    /*  */
+    
+.margin0{
+    margin: 0%;
+}
+/* Seccio de equipo */
+
+.equipo{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/sumate-a-mi-equipo.jpg);
+    height: 835px;
+}
+.equipo_texto{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+}
+.equipo_abajo{
+    background-color: $botones;
+    width: 1440px;
+    height: 235px;
+    border-radius: 0px 0px 80px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.equipo_boton{
+    margin: 53% 19%;    
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 21px;
+  
+}
+.unirse{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 315px;
+    height: 60px;
+    background: #292929;
+    border-radius: 52px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Boton de ver mas */
+.divBoton{
+    display: flex;
+    justify-content: end;
+}
+.botonMas{
+    display: none;
+    border-color:#A15215;
+    border:3px solid ;
+    border-radius: 11px;
+    color:#A15215;
+    width:111px ;
+    height: 48px;
+    font-size: 15px;
+}
+
+/* Footer */
+.divRedes{
+    border-bottom:2px solid black ;
+    margin-bottom: 50px;
+}
+.redesSociales{
+    margin:0% 145%;
+    margin-bottom: 50px;
+}
+.pieDePagina{
+    display: inline-table;
+    align-items: center;
+    justify-content: space-around;
+}
+.redes{
+    width: 50px;
+    height: 50px;
+    margin:10px 10px
+}
+.p_redes{
+    font-weight: bold;
+    color:black;
+    font-size: 30px;
+    margin-left:30px ;
+}
+.links{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.linkBoton{
+    text-decoration: none;
+    color: white;
+}
+.linkBoton:hover{
+    color: #B50303;
+}

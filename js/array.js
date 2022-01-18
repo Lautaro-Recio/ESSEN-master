@@ -1,0 +1,23 @@
+const recetas =[
+    {btns:"saludable",categorias:"Saludable",img:"assets/imgs/Barritas de yogurt.jpg",receta:"Barritas de Yogurt"},
+    {btns:"dulce",categorias:"Estoy para algo dulce",img:"assets/imgs/PEPAS.jpg",receta:"Pepas integrales con dulce de Frambuesa"},
+    {btns:"juntada",categorias:"Hoy nos juntamos",img:"assets/imgs/moussaka.jpg",receta:"Moussaka"},
+    {btns:"solo",categorias:"Solo en casa",img:"assets/imgs/Zapallitos-rellenos.jpg",receta:"Zapallitos rellenos"},
+    {btns:"citas",categorias:"Para citas",img:"assets/imgs/Bifesa-a-la-criolla.jpg",receta:"Bifes a la criolla"},
+    {btns:"saludable",categorias:"Saludable",img:"assets/imgs/MILANESASDEBERENJENACONVERDURAS.jpg",receta:"Milanesas de Berenjena"},
+    {btns:"saludable",categorias:"Saludable",img:"assets/imgs/Galletitas-de-naranja-y-avena.jpg",receta:"Galletitas de Avena y Naranja"},
+    {btns:"saludable",categorias:"Saludable",img:"assets/imgs/ñoquisremolacha.jpg",receta:"Ñoquis de remolacha sin gluten"},
+    {btns:"dulce",categorias:"Estoy para algo dulce",img:"assets/imgs/brownies.jpg",receta:"Brownies con Nuez"},
+    {btns:"dulce",categorias:"Estoy para algo dulce",img:"assets/imgs/cuadrados-de-ricota.jpg",receta:"Cuadrados de cheescake de lima con salsa de Frutos Rojos"},
+    {btns:"dulce",categorias:"Estoy para algo dulce",img:"assets/imgs/rogelitos.jpg",receta:"Rogelitos"},
+    {btns:"juntada",categorias:"Hoy nos juntamos",img:"assets/imgs/Calzone3.jpg",receta:"Calzone"},
+    {btns:"juntada",categorias:"Hoy nos juntamos",img:"assets/imgs/PolloBBQ.jpg",receta:"Pollo a la barbacoa"},
+    {btns:"juntada",categorias:"Hoy nos juntamos",img:"assets/imgs/pizza-vegetales.jpg",receta:"Pizza integral de verduras"},
+    {btns:"solo",categorias:"Solo en casa",img:"assets/imgs/Tortilla-de-papas-cruda-y-crema.jpg",receta:"Tortilla de papas en crudo"},
+    {btns:"solo",categorias:"Solo en casa",img:"assets/imgs/Soufle.jpg",receta:"Soufflé de calabaza y espinaca"},
+    {btns:"solo",categorias:"Solo en casa",img:"assets/imgs/tartaintegraldeverdura.jpg",receta:"Tarta integral de verdura"},
+    {btns:"citas",categorias:"Para citas",img:"assets/imgs/Pescado a la romana con verduras (1).jpg",receta:"Pescado a la romana con verduras"},
+    {btns:"citas",categorias:"Para citas",img:"assets/imgs/Suprema-de-pollo-rellena.jpg",receta:"Supremas de pollo rellenas"},
+    {btns:"citas",categorias:"Para citas",img:"assets/imgs/Capelettis-de-calabaza.jpg",receta:"capeletis de calabaza con masa de copetin"},
+
+]

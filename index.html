@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EssenParaTodxs</title>
+    <meta name="description" content="EssenParaTodxs busca que todxs puedan tener sus piezas Essen al momento, con los mejores precios y atencion!">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/ultimas/logo-essen.png">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Link al css -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light container-fluid h-140px" id="nav">
+        <div class="container-fluid w-1440px">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 18H3" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 14H3" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17 10H3" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 6H3" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </button>
+            <a class="d-flex navbar-brand logo" href="#">
+                <img src="assets/imgs/ultimas/logo-essen.png" class="imgLogo" alt="EssenParaTodxs">
+            </a>
+            <a class="d-lg-none wpp-icon-nav" href="https://walink.co/e8c611" target="#BLANK__">
+                <svg class="whatsapp-icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_200_589)">
+                        <path
+                            d="M6.34394 20.7353L6.73628 20.931C8.37128 21.909 10.2023 22.3655 12.0334 22.3655C17.7883 22.3655 22.4968 17.6707 22.4968 11.9326C22.4968 9.19403 21.385 6.52059 19.4232 4.5644C17.4613 2.6082 14.8454 1.49976 12.0334 1.49976C6.2786 1.49976 1.57 6.19454 1.63544 11.9979C1.63544 13.954 2.224 15.845 3.20491 17.4751L3.46647 17.8663L2.42022 21.7135L6.34394 20.7353Z"
+                            fill="#00E676" />
+                        <path
+                            d="M20.5343 3.52109C18.3109 1.23894 15.2373 0 12.0983 0C5.42794 0 0.0654375 5.41203 0.130781 11.9978C0.130781 14.0844 0.719344 16.1058 1.70034 17.9315L0 24.126L6.34341 22.4959C8.10909 23.474 10.0709 23.9305 12.0329 23.9305C18.6379 23.9305 24.0004 18.5183 24.0004 11.9327C24.0004 8.73757 22.7578 5.73808 20.5344 3.52109H20.5343ZM12.0983 21.9091C10.3326 21.9091 8.56687 21.4528 7.06275 20.5399L6.67041 20.3442L2.87747 21.3223L3.85837 17.6056L3.59681 17.2143C0.719344 12.5848 2.09269 6.45533 6.80119 3.58624C11.5097 0.717249 17.5915 2.08659 20.469 6.78138C23.3464 11.4762 21.973 17.5403 17.2646 20.4094C15.7604 21.3874 13.9294 21.909 12.0983 21.909V21.9091ZM17.8531 14.6714L17.1337 14.3453C17.1337 14.3453 16.0875 13.8889 15.4335 13.5628C15.3681 13.5628 15.3027 13.4976 15.2373 13.4976C15.0411 13.4976 14.9103 13.5628 14.7795 13.6281C14.7795 13.6281 14.7142 13.6932 13.7986 14.7365C13.7332 14.8669 13.6024 14.9322 13.4716 14.9322H13.4062C13.3408 14.9322 13.21 14.8669 13.1446 14.8018L12.8176 14.6714C12.0982 14.3453 11.4443 13.954 10.9211 13.4324C10.7903 13.302 10.5941 13.1716 10.4633 13.0412C10.0056 12.5848 9.54778 12.0631 9.22087 11.4763L9.15544 11.3459C9.09009 11.2806 9.09009 11.2155 9.02466 11.0851C9.02466 10.9547 9.02466 10.8243 9.09009 10.759C9.09009 10.759 9.35166 10.433 9.54778 10.2374C9.67866 10.1069 9.744 9.91136 9.87478 9.78096C10.0056 9.58531 10.071 9.32451 10.0056 9.12886C9.94022 8.80282 9.15544 7.04227 8.95931 6.65107C8.82844 6.45542 8.69775 6.39027 8.50153 6.32502H7.78219C7.65131 6.32502 7.52062 6.39027 7.38975 6.39027L7.32431 6.45542C7.19353 6.52067 7.06275 6.65107 6.93197 6.71622C6.80119 6.84672 6.73575 6.97703 6.60497 7.10752C6.14719 7.69437 5.88562 8.41161 5.88562 9.12886C5.88562 9.65046 6.01641 10.1722 6.21262 10.6286L6.27806 10.8243C6.86663 12.0631 7.65131 13.1716 8.69775 14.1497L8.95931 14.4105C9.15544 14.6061 9.35166 14.7365 9.48244 14.9321C10.8558 16.1059 12.4252 16.9535 14.1909 17.41C14.3872 17.4751 14.6487 17.4751 14.8449 17.5404H15.4988C15.8258 17.5404 16.2182 17.41 16.4798 17.2796C16.676 17.1492 16.8068 17.1492 16.9375 17.0188L17.0684 16.8883C17.1992 16.7579 17.33 16.6927 17.4608 16.5623C17.5915 16.4319 17.7223 16.3015 17.7878 16.171C17.9185 15.9102 17.9839 15.5842 18.0493 15.2582V14.8018C18.0493 14.8018 17.9839 14.7365 17.8531 14.6714Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_200_589">
+                            <rect width="24" height="24.2105" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Essen para todxs</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-links" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="#receta">Recetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links" href="https://walink.co/e8c611" target="#BLANK__">Sumate a mi equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links contact" href="https://walink.co/e8c611" target="#BLANK__">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid  p-0">
+        <div class="container-fluid p-0 bg-essen w-1440px">
+            <div class="bg-essen-img">
+                <img src="assets/imgs/background-essen.png" alt="">
+            </div>
+        </div>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide position-absolute" data-bs-ride="carousel">
+            <div class="carousel-indicators position-relative">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"
+                    style="background-color: #B50303; border-radius: 50%; width: 16px; height: 16px; margin-right: 50px;">
+                </button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                    style="background-color: #B50303; border-radius: 50%; width: 16px; height: 16px; margin-right: 50px;"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                    style="background-color: #B50303; border-radius: 50%; width: 16px; height: 16px; margin-right: 50px;"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="assets/imgs/cacerola-24cm-promociones.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div
+                        class="container-fluid w-1440px d-flex justify-content-center flex-column align-content-center txt-main-container">
+                        <h3 class="carousel-main-txt">Oferta especial <span class="carousel-main-txt-2">Verano</span>
+                        </h3>
+                        <h2 class="carousel-secondary-txt d-none d-lg-block">Conseguí los mejores descuentos y obtené la Essen que siempre quisiste.</h2>
+                        <h2 class="carousel-secondary-txt d-lg-none">Conseguí los mejores <br> descuentos y obtené <br>
+                            tu Essen.
+                        </h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="assets/imgs/ultimas/sartenx4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div
+                        class="container-fluid w-1440px d-flex justify-content-center flex-column align-content-center txt-main-container">
+                        <h3 class="carousel-main-txt">Cuotas sin<span class="carousel-main-txt-2">Interés</span>
+                        </h3>
+                        <h2 class="carousel-secondary-txt d-none d-lg-block">¿Sabías que podés tener la Essen que quieras en cuotas sin interés?</h2>
+                        <h2 class="carousel-secondary-txt d-lg-none">¿Sabías que podés tener <br> la Essen que quieras <br>
+                            en cuotas sin interés?
+                        </h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="assets/imgs/ultimas/olla-terrax4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div
+                        class="container-fluid w-1440px d-flex justify-content-center flex-column align-content-center txt-main-container">
+                        <h3 class="carousel-main-txt">¿Tenes una vieja <span class="carousel-main-txt-2">Essen?</span>
+                        </h3>
+                        <h2 class="carousel-secondary-txt d-none d-lg-block">Podés canjear tu Essen antigua como parte de pago para una nueva Essen.</h2>
+                        <h2 class="carousel-secondary-txt d-lg-none">Podés canjear tu Essen antigua <br> como parte de pago para <br>
+                            una nueva Essen.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid w-1440px">
+            <a class="btn-consultar">
+                Consultar
+            </a>
+        </div>
+        <div class="container-fluid w-1440px" id="productos">
+            <h2 class="w-100 d-flex justify-content-center nuestrosProductos-txt">Nuestros Productos</h2>
+            <h3 class="w-100 nuestrosProductos-txt-secondary d-flex justify-content-center">Descubrí cuál es la
+                pieza indicada para vos.</h3>
+        </div>
+
+
+        <div class="p-absolute">
+            <div class="container-fluid">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/cacerola24cm-aqua.png" alt="cacerola essen aqua 24cm">
+                            <span class="product-title">Línea Aqua</span>
+                            <span class="product-subtitle">Cacerola de 24 cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/sarten24cm-aqua.png" alt="sarten essen aqua 24cm">
+                            <span class="product-title">Línea Aqua</span>
+                            <span class="product-subtitle">Sarten de 24cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/cacerola18cm.png" alt="cacerola essen aqua 18cm">
+                            <span class="product-title">Línea Aqua</span>
+                            <span class="product-subtitle">Cacerola de 18 cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/flip-aqua.png" alt="flip essen aqua 24cm">
+                            <span class="product-title">Línea Aqua</span>
+                            <span class="product-subtitle">Flip</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/cuadrada24cm-aqua.png" alt="cacerola cuadrada 24cm essen">
+                            <span class="product-title">Línea Aqua - Cuadrada</span>
+                            <span class="product-subtitle">Cacerola 24cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/cacerola24cm-terra.png" alt="cacerola essen terra 24cm">
+                            <span class="product-title">Línea Terra</span>
+                            <span class="product-subtitle">Cacerola de 24 cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/savarin-18cm.png" alt="savarin essen 18cm">
+                            <span class="product-title">Savarín</span>
+                            <span class="product-subtitle">Savarín 18cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/savarin-24cm.png" alt="savarin essen 24cm">
+                            <span class="product-title">Savarín</span>
+                            <span class="product-subtitle">Savarín 24cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/sarten20cm-terra.png" alt="sarten essen 20cm">
+                            <span class="product-title">Línea Terra</span>
+                            <span class="product-subtitle">Sartén 20cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/flip-rosa.png" alt="flip rosa essen 20cm">
+                            <span class="product-title">Flip</span>
+                            <span class="product-subtitle">Flip Rosa</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/cuadrada24cm-terra.png" alt="cacerola terra 24cm essen cuadrada">
+                            <span class="product-title">Línea Terra- Cuadrada</span>
+                            <span class="product-subtitle">Cacerola de 24cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/ultimas/sarten-marsala24cm.png" alt="flip rosa essen 20cm">
+                            <span class="product-title">Sartén</span>
+                            <span class="product-subtitle">Sartén Marsala 24cm</span>
+                            <!--<span class="product-description">Descripción del producto</span>!-->
+                            <button class="product-btn-consultarPrecio"><a href="https://walink.co/e8c611" class="links" target="#BLANK__">Consultar Precio</a></button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<div class="container w-1440px" id="receta">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h3 class="recetas_titulo pt-140px" id="receta">Recetas destacadas</h3>
+            <p class="recetas_titulo_p" id="recetas_p">Encontra tu receta para cada momento</p>
+        </div>
+    </div>
+    <div class="row SeccionRecetas">
+        <div class="col-md-12 col-xs-12 divBoton">
+            <button class="botonMas" id="botonMas"><a
+                    href="https://drive.google.com/folderview?id=1Y5HpuB8wrnYS0NR2J2Xlx5xHnmoC1mOx" class="link_recetas"
+                    target="blanck"> Ver más</a> </button>
+        </div>
+
+        <main class="container-fluid col-md-2 p-0">
+            <div class="p-absolute">
+                <div class="container-fluid">
+                    <div class="swiper2 recetas_destacadas" id="vertical">
+                        <div class="swiper-wrapper" id="botones">
+                            <!-- Botones -->
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev2"></div>
+                    <div class="swiper-button-next2"></div>
+                </div>
+            </div>
+        </main>
+
+        <main class="container-fluid col-md-10 p-0">
+            <div class="p-absolute">
+                <div class="container-fluid">
+                    <div class="swiper3 recetas_destacadas ">
+                        <div class="swiper-wrapper" id="recetas">
+                            <!-- Recetas -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination3"></div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="row pt-140px">
+        <div class="col-md-12 col-xs-12 equipo ">
+            <h2 class="equipo_texto">¿Queres <br> sumarte a <br> mi equipo?</h2>
+            <button class="equipo_boton" id="↓">↓</button>
+
+        </div>
+        <div class="col-md-12 col-xs-12 equipo_abajo">
+            <button class="unirse" id="quiero"><a class="linkBoton" href="https://walink.co/e8c611" target="blanck"> ¡Quiero ser parte! </a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="divRedes">
+            <div class="redesSociales">
+                <p class="p_redes pt-5">Seguime en las redes</p>
+                <br>
+                <div class="w-100 d-flex justify-content-center">
+                    <a href="https://instagram.com/essenparatodxs?utm_medium=copy_link" target="#BLANK__"><img class="redes"
+                        src="assets/imgs/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/Essen-para-todxs-100609849043087" target="#BLANK__"><img class="redes"
+                        src="assets/imgs/facebook.png" alt="facebook"></a>
+                <a href="https://walink.co/e8c611" target="#BLANK__"><img class="redes" src="assets/imgs/whatsapp.png" alt="whatsapp"></a>
+                <a href="http://tiktok.com/@essenparatodxs" target="#BLANK__"><img class="redes" src="assets/imgs/tiktok.png"
+                        alt="tiktok"></a>
+                <a href="https://www.youtube.com/c/EssenCanalOficial" target="#BLANK__"><img class="redes" src="assets/imgs/youtube.png"
+                        alt="youtube"></a>
+                </div>
+                
+            </div>
+            <div class="container-fluid w-1440px">
+                <a class="btn-whatsapp" href="https://walink.co/e8c611" target="#BLANK__">
+                    <svg class="btn-whatsapp-icon" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_327_241)">
+                            <path
+                                d="M8.45859 27.6472L8.98171 27.9081C11.1617 29.2121 13.6031 29.8207 16.0446 29.8207C23.7177 29.8207 29.9957 23.561 29.9957 15.9102C29.9957 12.2588 28.5133 8.6942 25.8976 6.08594C23.2817 3.47769 19.7938 1.99976 16.0446 1.99976C8.37146 1.99976 2.09334 8.25947 2.18059 15.9972C2.18059 18.6054 2.96534 21.1268 4.27321 23.3002L4.62196 23.8219L3.22696 28.9514L8.45859 27.6472Z"
+                                fill="#00E676" />
+                            <path
+                                d="M27.3791 4.69479C24.4145 1.65192 20.3164 0 16.131 0C7.23725 0 0.08725 7.21605 0.174375 15.997C0.174375 18.7791 0.959125 21.4744 2.26712 23.9087L0 32.168L8.45788 29.9945C10.8121 31.2987 13.4279 31.9073 16.0439 31.9073C24.8505 31.9073 32.0005 24.6911 32.0005 15.9103C32.0005 11.6501 30.3438 7.65077 27.3792 4.69479H27.3791ZM16.131 29.2122C13.7768 29.2122 11.4225 28.6037 9.417 27.3865L8.89388 27.1256L3.83663 28.4297L5.1445 23.4742L4.79575 22.9524C0.959125 16.7797 2.79025 8.60711 9.06825 4.78166C15.3462 0.956332 23.4554 2.78212 27.292 9.04184C31.1285 15.3015 29.2974 23.3871 23.0195 27.2125C21.0139 28.5166 18.5725 29.212 16.131 29.212V29.2122ZM23.8041 19.5619L22.845 19.1271C22.845 19.1271 21.45 18.5185 20.578 18.0838C20.4907 18.0838 20.4036 17.9968 20.3164 17.9968C20.0548 17.9968 19.8804 18.0838 19.706 18.1708C19.706 18.1708 19.6189 18.2577 18.3981 19.6487C18.3109 19.8226 18.1365 19.9096 17.9621 19.9096H17.8749C17.7877 19.9096 17.6134 19.8226 17.5261 19.7357L17.0901 19.5619C16.131 19.1271 15.2591 18.6054 14.5615 17.9099C14.3871 17.7361 14.1255 17.5622 13.9511 17.3883C13.3407 16.7797 12.7304 16.0841 12.2945 15.3017L12.2072 15.1278C12.1201 15.0408 12.1201 14.9539 12.0329 14.7801C12.0329 14.6062 12.0329 14.4323 12.1201 14.3453C12.1201 14.3453 12.4689 13.9106 12.7304 13.6499C12.9049 13.4759 12.992 13.2151 13.1664 13.0413C13.3407 12.7804 13.428 12.4327 13.3407 12.1718C13.2536 11.7371 12.2073 9.3897 11.9458 8.86809C11.7712 8.60723 11.597 8.52036 11.3354 8.43336H10.3763C10.2017 8.43336 10.0275 8.52036 9.853 8.52036L9.76575 8.60723C9.59138 8.69423 9.417 8.86809 9.24263 8.95496C9.06825 9.12896 8.981 9.3027 8.80663 9.47669C8.19625 10.2592 7.8475 11.2155 7.8475 12.1718C7.8475 12.8673 8.02187 13.5629 8.2835 14.1715L8.37075 14.4323C9.1555 16.0841 10.2017 17.5622 11.597 18.8663L11.9458 19.214C12.2073 19.4749 12.4689 19.6487 12.6433 19.9095C14.4744 21.4745 16.567 22.6047 18.9212 23.2133C19.1829 23.3002 19.5316 23.3002 19.7932 23.3872H20.6651C21.1011 23.3872 21.6243 23.2133 21.9731 23.0394C22.2346 22.8656 22.409 22.8656 22.5834 22.6917L22.7579 22.5177C22.9323 22.3439 23.1066 22.257 23.281 22.0831C23.4554 21.9092 23.6297 21.7354 23.717 21.5614C23.8914 21.2137 23.9785 20.7789 24.0658 20.3443V19.7357C24.0658 19.7357 23.9785 19.6487 23.8041 19.5619Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_327_241">
+                                <rect width="32" height="32.2807" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Chateá conmigo</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Script boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+</script>
+<!-- Arrayas -->
+<script src="js/array.js"></script>
+<!-- Js -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
